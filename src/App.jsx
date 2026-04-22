@@ -5,7 +5,7 @@ function App() {
   const [response, setResponse] = useState("");
 
   const saveNote = async () => {
-    const res = await fetch("YOUR_API_URL", {
+    const res = await fetch("https://oj07e9g16f.execute-api.us-east-1.amazonaws.com/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
